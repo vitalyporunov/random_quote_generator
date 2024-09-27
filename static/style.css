@@ -151,3 +151,34 @@ body.dark-mode footer {
 html {
     transition: background-color 0.3s, color 0.3s;
 }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+.quote {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition */
+}
+
+/* Add fade-out class */
+.fade-out {
+    animation: fadeOut 0.5s ease-in-out forwards; /* Fade-out effect */
+}
