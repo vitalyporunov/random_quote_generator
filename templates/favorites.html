@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <h2>Your Favorite Quotes:</h2>
+        {% if favorites %}
+            <ul>
+                {% for quote in favorites %}
+                    <li>"{{ quote }}"</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>You haven't favorited any quotes yet!</p>
+        {% endif %}
+        <button onclick="window.location.href='{{ url_for('show_quotes') }}'">Go Back to Quotes</button>
+    </section>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <h2>Submit a New Quote</h2>
+        <form method="POST" action="{{ url_for('submit_quote') }}">
+            <textarea name="quote" rows="5" placeholder="Enter your quote here..." required></textarea>
+            <button type="submit">Submit Quote</button>
+        </form>
+    </section>
+{% endblock %}

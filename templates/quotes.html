@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <h2>Your Random Quote:</h2>
+        <blockquote>"{{ quote }}"</blockquote>
+        <button onclick="window.location.href='{{ url_for('favorite_quote', quote=quote) }}'">Favorite this Quote</button>
+        <button onclick="window.location.href='{{ url_for('show_quotes') }}'">Show Another Quote</button>
+    </section>
+{% endblock %}
