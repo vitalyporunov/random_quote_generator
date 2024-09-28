@@ -16,7 +16,6 @@ const quotes = [
     { text: "The only way to do great work is to love what you do.", author: "Steve Jobs" },
     { text: "Life is what happens when you're busy making other plans.", author: "John Lennon" },
     { text: "Get busy living or get busy dying.", author: "Stephen King" },
-    // Add more quotes here
 ];
 
 function getRandomQuote() {
