@@ -7,3 +7,5 @@ Submit Quotes: Users can submit their own quotes through a form, which are then 
 Favorites Section: Users can mark quotes as favorites and view them in a separate section.
 Responsive Design: The website adapts to different screen sizes and devices.
 Animations: Quotes fade in and out smoothly, enhancing the overall aesthetic. 
+Can be accessed: https://random-quote-generator-ul5g.onrender.com/ 
+Repository Link: https://github.com/vitalyporunov/random_quote_generator 
