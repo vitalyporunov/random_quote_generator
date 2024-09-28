@@ -48,3 +48,21 @@ document.getElementById('new-quote-button').addEventListener('click', displayQuo
 
 // Initial quote display
 displayQuote();
+
+// Accordion Functionality
+const accordionButtons = document.querySelectorAll('.accordion-button');
+
+accordionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+
+        // Toggle the content visibility
+        if (content.style.display === "block") {
+            content.style.display = "none";
+            button.classList.remove('active');
+        } else {
+            content.style.display = "block";
+            button.classList.add('active');
+        }
+    });
+});

@@ -182,3 +182,76 @@ html {
 .fade-out {
     animation: fadeOut 0.5s ease-in-out forwards; /* Fade-out effect */
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.faq-section {
+    margin: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #0077ff;
+}
+
+/* Accordion styles */
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    background-color: #0077ff;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.accordion-button:hover {
+    background-color: #005bb5;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    background-color: #f4f4f4;
+    border-left: 4px solid #0077ff;
+}
+
+.accordion-content p {
+    margin: 0;
+}
+
+.accordion-button.active {
+    background-color: #005bb5;
+}
